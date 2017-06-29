@@ -47,13 +47,20 @@
                                     </button>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="iNA-Mq-VIh">
                                         <rect key="frame" x="0.0" y="104.5" width="288" height="320"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="iNA-Mq-VIh" secondAttribute="height" multiplier="9:10" id="QD0-c0-ypi"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="8cH-VD-jf0" appends="YES" id="1PE-qX-6zq"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iNA-Mq-VIh" secondAttribute="trailing" id="ENK-YH-jOa"/>
                                     <constraint firstAttribute="trailing" secondItem="HoE-yh-F7X" secondAttribute="trailing" id="FbJ-mh-70G"/>
+                                    <constraint firstItem="iNA-Mq-VIh" firstAttribute="top" secondItem="uX7-cX-ghD" secondAttribute="bottom" constant="8" id="G4C-ck-c7k"/>
+                                    <constraint firstItem="iNA-Mq-VIh" firstAttribute="leading" secondItem="gp8-gS-yxY" secondAttribute="leading" id="JpB-nN-j22"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -67,9 +74,15 @@
                     <connections>
                         <outlet property="mealNameLabel" destination="cm3-vK-wMx" id="yWQ-tT-K1L"/>
                         <outlet property="nameTextField" destination="HoE-yh-F7X" id="TDT-YJ-oGt"/>
+                        <outlet property="photoImageView" destination="iNA-Mq-VIh" id="ZmO-wc-JIH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8cH-VD-jf0">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="NWQ-67-iRI"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.875" y="138.38028169014083"/>
         </scene>
