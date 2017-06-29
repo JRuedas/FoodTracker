@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gp8-gS-yxY">
-                                <rect key="frame" x="16" y="40" width="288" height="424.5"/>
+                                <rect key="frame" x="16" y="40" width="288" height="426.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cm3-vK-wMx">
                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="20.5"/>
@@ -45,16 +45,19 @@
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ik-1Y-0mk"/>
                                         </connections>
                                     </button>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="iNA-Mq-VIh">
-                                        <rect key="frame" x="0.0" y="104.5" width="288" height="320"/>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="270" placeholderIntrinsicHeight="270" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="iNA-Mq-VIh">
+                                        <rect key="frame" x="0.0" y="104.5" width="288" height="270"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="iNA-Mq-VIh" secondAttribute="height" multiplier="9:10" id="QD0-c0-ypi"/>
+                                            <constraint firstAttribute="width" secondItem="iNA-Mq-VIh" secondAttribute="height" multiplier="16:15" id="Pfe-hL-AUj"/>
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="8cH-VD-jf0" appends="YES" id="1PE-qX-6zq"/>
                                         </connections>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ifo-zU-amy" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="382.5" width="252" height="44"/>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="iNA-Mq-VIh" secondAttribute="trailing" id="ENK-YH-jOa"/>
@@ -84,7 +87,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="136.875" y="138.38028169014083"/>
+            <point key="canvasLocation" x="136" y="138"/>
         </scene>
     </scenes>
     <resources>
