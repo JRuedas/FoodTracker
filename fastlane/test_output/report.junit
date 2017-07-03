@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='FoodTrackerTests.xctest' tests='2' failures='0'>
+  <testsuite name='FoodTrackerTests.FoodTrackerTests' tests='2' failures='0'>
+    <testcase classname='FoodTrackerTests.FoodTrackerTests' name='testMealInitializationFails' time='0.004'/>
+    <testcase classname='FoodTrackerTests.FoodTrackerTests' name='testMealInitializationSucceeds' time='0.007'/>
+  </testsuite>
+</testsuites>
