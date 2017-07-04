@@ -31,13 +31,6 @@ class FoodTrackerUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
-        
-        let app = XCUIApplication()
-        let navBar = app.navigationBars["Your Meals"]
-        let addButton = navBar.buttons["+"]
-        addButton.tap()
+
     }
-    
-  
 }
