@@ -9,7 +9,8 @@
 import XCTest
 
 class FoodTrackerUITests: XCTestCase {
-        
+    var app: XCUIApplication!
+    
     override func setUp() {
         super.setUp()
         
@@ -29,6 +30,6 @@ class FoodTrackerUITests: XCTestCase {
     }
     
     func testExample() {
-
+        
     }
 }

@@ -47,6 +47,9 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </stackView>
                                     </subviews>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="Accesibility" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="YES"/>
@@ -93,7 +96,7 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cqs-Vk-0lJ">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
-                                        <accessibility key="accessibilityConfiguration" identifier="mealNameDetail"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="mealTextFieldDetail"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -200,6 +203,6 @@
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OYG-Wr-wrS"/>
+        <segue reference="bye-1r-UsD"/>
     </inferredMetricsTieBreakers>
 </document>
